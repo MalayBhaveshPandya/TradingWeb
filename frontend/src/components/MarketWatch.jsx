@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
 
-const MarketWatch = () => {
+const MarketWatch = ({ onStockClick }) => {
   const [stocks, setStocks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -68,6 +68,7 @@ const MarketWatch = () => {
           filteredStocks.map((stock) => (
             <li
               key={stock._id}
+              onClick={() => onStockClick(stock)}
               className="flex justify-between items-center p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer group transition-colors"
             >
               {/* Left: Symbol */}
