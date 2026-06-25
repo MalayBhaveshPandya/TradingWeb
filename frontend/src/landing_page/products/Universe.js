@@ -2,7 +2,39 @@ import react from 'react';
 
 const Universe = () => {
     return (
-        <h1>Universe Section</h1>
+        <div className="container">
+            <div className="row text-center mt-5 mb-5">
+                <h1 className="fs-1 mb-3">
+                    The Zerodha Universe
+                </h1>
+                <p className="fs-5">Extend your trading and investment experience even further with our partner platforms</p>
+                <div className="col-4 p-3 mt-5  text-center">
+                        <img src="media/images/smallcaseLogo.png" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Thematic investment Platform</p>
+                    </div>
+                <div className="col-4 p-3 mt-5  text-center">
+                        <img src="media/images/streakLogo.png" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Algo & strategy platform</p>
+                </div>
+                <div className="col-4 p-3 mt-5  text-center">
+                        <img src="media/images/zerodhaFundhouse.png" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Asset Management</p>
+                </div>
+                <div className="col-4 p-3 mt-5 text-center">
+                        <img src="media/images/goldenpiLogo.png" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Bonds trading platform</p>
+                </div>
+                <div className="col-4 p-3 mt-5 text-center">
+                        <img src="media/images/sensibullLogo.svg" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Options trading platform</p>
+                </div>
+                <div className="col-4 p-3 mt-5 text-center">
+                        <img src="media/images/dittoLogo.png" alt="Smallcase Logo" style={{ width: '100%', height: 'auto' }} />
+                        <p className="text-small text-muted text-center">Insurance</p>
+                </div>
+                <button className='p-2 btn btn-primary fs-5 mb-5' style={{width:"20%", margin:"0 auto"}}>Signup Now</button>
+            </div>
+        </div>
     );
 }   
 
